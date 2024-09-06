@@ -33,6 +33,9 @@ MANIFEST
 *.spec
 *.pt
 
+#captured.jpeg
+#edged.jpg
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
