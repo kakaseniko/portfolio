@@ -13,7 +13,7 @@ def main():
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
     
     st.write(f"""
-             <h1 style="text-align:center; margin-bottom:1rem; margin-left:1rem;">Welcome! I'm Eniko Kakas.</h1>
+             <h1 style=" margin-bottom:1rem;">Welcome! I'm Eniko Kakas.</h1>
              """, unsafe_allow_html=True)
 
 
@@ -31,30 +31,39 @@ def main():
     social_icons_html = [f"<a href='{social_icons[platform][0]}' target='_blank' style='margin-right: 10px;'><img class='social-icon' src='{social_icons[platform][1]}'' alt='{platform}''></a>" for platform in social_icons]
 
     st.write(f"""
-             <div class="profile">
-                <div class="profile-frame">
-                    <div class="circle">
-                        <div class="img-frame">
-                            <img class="bd" src="{img}" alt="Eniko Kakas">
+             <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
+                <div class="profile">
+                    <div class="profile-frame">
+                        <div class="circle">
+                            <div class="img-frame">
+                                <img class="bd" src="{img}" alt="Eniko Kakas">
+                            </div>
+                        </div>
+                        <h2 style="margin-left: 1rem;">Software & AI Engineer 👩‍💻</h2>
+                        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+                        {''.join(social_icons_html)}
                         </div>
                     </div>
-                    <h2 style="margin-left: 1rem;">Software & AI Engineer 👩‍💻</h2>
-                    <div style="display: flex; justify-content: center; margin-bottom: 20px;">
-                    {''.join(social_icons_html)}
+                </div>
+                <div class="about-me">
+                    <diV class="profile-frame" style="height: 100%; overflow: scroll;">
+                        <div>
+                            <h1>About Me</h1>
+                        </div>
+                        <div style="margin-left: 1rem; margin-top:1rem;">
+                            <p >I am a Software engineer...</p>
+                            <p>software, recreation manager, setter, dancer, a whole lot of hobbies.</p>
+                            <p> lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Ask the chatbot...</p>
+                            <p>Check out my projects...</p>
+                        </div>
                     </div>
                 </div>
             </div>
         """, 
         unsafe_allow_html=True)
 
-    st.write(f"""
-             <div class="section-title">
-                <h1 style="padding:0;">About me</h1>
-             </div>
-             """,
-             unsafe_allow_html=True)
 
-    st.write("I am a Software engineer...")
     with open("./images/Resume.pdf", "rb") as pdf_file:
         pdf_bytes = pdf_file.read()
 
@@ -64,17 +73,6 @@ def main():
         file_name="Resume.pdf",
         mime="application/pdf",
     )
-    st.subheader("Jack of all trades")
-    st.write("software, recreation manager, setter, dancer, a whole lot of hobbies")
-
-    st.write("Ask the chatbot if you want to know more...")
-    st.write("Check out my projects...")
-
-    st.write(f"""
-             <div class="section-title" id="contact" style="position:absolute; right: 0;">
-                <h1 style="padding: 0; text-align: end;">Contact me</h1>
-             </div>
-             """, unsafe_allow_html=True)
 
 if __name__ == '__main__':
     main()

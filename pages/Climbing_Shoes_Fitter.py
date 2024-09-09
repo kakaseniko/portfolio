@@ -16,6 +16,8 @@ def load_shoes():
     shoesdf = pd.read_csv('./data/climbingshoesdata.csv')
     return shoesdf
 
+st.header("Take a pictur of your foot to find out which climbing shoes fit you best")
+
 #APP
 img_file_buffer = st.camera_input("Take a picture")
 

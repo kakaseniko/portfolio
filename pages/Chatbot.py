@@ -39,6 +39,7 @@ def response_generator(response):
     for word in response.split():
         yield word + " "
         time.sleep(0.05)
+st.header("Ask questions about me from the AI assistant")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -65,4 +66,5 @@ if prompt := st.chat_input("What would you like to know about Eniko Kakas?"):
             response = st.write_stream(response_generator(create_answer(prompt))) #{create_answer(prompt)}
     # Add assistant response to chat history
     st.session_state.messages.append({"role": "assistant", "content": response})
+
 
