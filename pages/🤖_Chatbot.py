@@ -16,7 +16,7 @@ load_dotenv()
 COHERE_API_KEY = os.getenv("COHERE_API_KEY")
 llm = ChatCohere(cohere_api_key=COHERE_API_KEY)
 
-pdf_text = extract_text("./images/Resume.pdf")
+pdf_text = extract_text("./images/summary.pdf")
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
 chunks = text_splitter.split_text(pdf_text)
 cohere_embeddings = CohereEmbeddings(model= "embed-english-v3.0",cohere_api_key=COHERE_API_KEY)

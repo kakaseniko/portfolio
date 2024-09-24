@@ -38,11 +38,24 @@ h2{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   margin: 2rem 0rem 2rem 0rem;
   padding: 2rem;
   background-color: rgba(39, 39, 41, 0.356);
 
+}
+button{
+  border-style: solid;
+  border-radius: 8%;
+  border-width: 2px;
+  background-color: rgb(31, 29, 29);
+  padding: 5px;
+  color: #b3b1b1;
+  border-color: rgb(110, 110, 110);
+}
+button:hover{
+  border-color:rgb(138, 26, 26);
 }
 .img-frame{
   width: 200px; /* Set the size of the circle */
@@ -68,7 +81,7 @@ h2{
 }
 .about-me{
   max-width: 70%;
-  height: 26.5rem;
+  height: 26rem;
   margin-bottom: 3rem;
 }
 

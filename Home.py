@@ -45,34 +45,35 @@ def main():
                         </div>
                     </div>
                 </div>
-                <div class="about-me">
-                    <diV class="profile-frame" style="height: 100%; overflow: scroll;">
+                <div class="about-me" >
+                    <div class="profile-frame" style="">
                         <div>
                             <h1>About Me</h1>
+                            </br>
                         </div>
-                        <div style="margin-left: 1rem; margin-top:1rem;">
-                            <p >I am a Software engineer...</p>
-                            <p>software, recreation manager, setter, dancer, a whole lot of hobbies.</p>
-                            <p> lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p>Ask the chatbot...</p>
-                            <p>Check out my projects...</p>
+                        <div style="margin-left: 1rem; margin-top:1rem; ">
+                            <p >By my latest professional title I am a Software Engineer but that is not going to be enough to describe me
+                            ... because I am a true generalist, versatile and adventurous with a passion for learning and exploring new paths.</p>
+                            <p>I started out as a Recreation Manager, then became a hairdresser, finally ending up in IT. Within IT I am embracing variety too, from data collection, through model training, to application development and deployment.</p>
+                            <p>Outside of work I can be found lost in one of my passions: climbing, surfing, dancing, or just being outdoors in the woods or on a campsite.</p>
+                            <p>As my many interests show, I find learning new skills, exploring, and facing challenges important, and fulfilling. </p>
+                            <p>I strive for a balanced life where my hobbies, work, and personal growth are all given equal importance, aiming for a work-life balance that values my diverse interests and recognizes the importance of personal development.
+                                My ultimate goal is to find a position that encourages my curiosity and thirst for knowledge, ensuring I continue to grow and contribute in my unique way.</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="profile-frame" style='width: 21rem;'>
+                <p>If you want to know more ask the Chatbot 🤖 or: </p>
+                <a href="path_to_your_file/Resume.pdf" download="Resume.pdf">
+                    <button>📄 Download my CV</button>
+                </a>
+                </br>
+                <p>👈 And don't forget to check out my projects on the left.</p>
+            </div>
         """, 
         unsafe_allow_html=True)
 
-
-    with open("./images/Resume.pdf", "rb") as pdf_file:
-        pdf_bytes = pdf_file.read()
-
-    st.download_button(
-        label="📄 Download my CV",
-        data=pdf_bytes,
-        file_name="Resume.pdf",
-        mime="application/pdf",
-    )
 
 if __name__ == '__main__':
     main()

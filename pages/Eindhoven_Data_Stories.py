@@ -6,6 +6,9 @@ import plotly.graph_objects as go
 df = pd.read_csv('./data/trendy_eindhoven_data_Eniko.csv')
 st.header("Explore trends in Eindhoven")
 
+st.write("""This small data visualization project was part of my 'Advanced AI' semester at Fontys. The goal was to create interactive graphs that allow people to 
+         see trends in Eindhoven's neighborhoods over the years and demonstrate how data can tell stories. For this project I used pandas and plotly.""")
+
 variable = st.selectbox("Select a variable:", ['Aantal woningen', 'Inwoners', 'Gemiddeld elektriciteitsverbruik totaal', 'Verplaatst zich meestal per fiets %',
                                               'Personenauto\'s totaal', 'Doet aan vrijwilligerswerk', 'Sport wekelijks (18-84 jaar)', 
                                               'Bezoekt culturele voorstellingen %', 'Registraties overlast per 1.000 inwoners',
