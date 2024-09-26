@@ -21,7 +21,6 @@ def load_ann():
     probability_model = tf.keras.Sequential([model, tf.keras.layers.Softmax()])
     return probability_model
 
-
 def calculateWidthCategory(boxh, boxw):
     ratio = boxw / boxh
     category = 'narrow'
