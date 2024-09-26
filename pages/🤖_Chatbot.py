@@ -9,9 +9,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_cohere import CohereEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.chains import RetrievalQA
-from dotenv import load_dotenv
 
-load_dotenv()
 
 COHERE_API_KEY = os.getenv("COHERE_API_KEY")
 llm = ChatCohere(cohere_api_key=COHERE_API_KEY)
