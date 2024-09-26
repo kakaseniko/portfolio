@@ -13,6 +13,6 @@ timm==0.9.12
 ultralytics==8.0.235
 langchain_cohere==0.2.4
 langchain==0.2.16
-pdfminer.six==
+pdfminer.six==20240706
 faiss_cpu==1.8.0.post1
 tensorflow==2.13.0
