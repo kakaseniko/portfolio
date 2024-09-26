@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.header("Log wave conditions during your surf session")
+st.header("Log wave conditions during your surf session 🏄")
 st.write(f"""
     <div>
          <p>

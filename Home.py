@@ -31,7 +31,7 @@ def main():
     social_icons_html = [f"<a href='{social_icons[platform][0]}' target='_blank' style='margin-right: 10px;'><img class='social-icon' src='{social_icons[platform][1]}'' alt='{platform}''></a>" for platform in social_icons]
 
     st.write(f"""
-             <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
+            <div class="container">
                 <div class="profile">
                     <div class="profile-frame">
                         <div class="circle">
@@ -46,30 +46,29 @@ def main():
                     </div>
                 </div>
                 <div class="about-me" >
-                    <div class="profile-frame" style="">
-                        <div>
-                            <h1>About Me</h1>
-                            </br>
-                        </div>
-                        <div style="margin-left: 1rem; margin-top:1rem; ">
-                            <p >By my latest professional title I am a Software Engineer but that is not going to be enough to describe me
-                            ... because I am a true generalist, versatile and adventurous with a passion for learning and exploring new paths.</p>
-                            <p>I started out as a Recreation Manager, then became a hairdresser, finally ending up in IT. Within IT I am embracing variety too, from data collection, through model training, to application development and deployment.</p>
-                            <p>Outside of work I can be found lost in one of my passions: climbing, surfing, dancing, or just being outdoors in the woods or on a campsite.</p>
-                            <p>As my many interests show, I find learning new skills, exploring, and facing challenges important, and fulfilling. </p>
-                            <p>I strive for a balanced life where my hobbies, work, and personal growth are all given equal importance, aiming for a work-life balance that values my diverse interests and recognizes the importance of personal development.
-                                My ultimate goal is to find a position that encourages my curiosity and thirst for knowledge, ensuring I continue to grow and contribute in my unique way.</p>
-                        </div>
+                    <div>
+                        <h1>About Me</h1>
+                        </br>
+                    </div>
+                    <div style="margin-left: 1rem; margin-top:1rem;">
+                        <p style="font-size: 22px;">By my latest professional title I am a Software Engineer but that is not enough to describe me
+                        ... because I am a true generalist, versatile and adventurous with a passion for learning and exploring new paths.</br></br>
+                        I started out as a Recreation Manager, then became a hairdresser, finally ending up in IT. Within IT I am embracing variety too, from data preparation, through model training, to application development and deployment.</br></br>
+                        Outside of work I can be found lost in one of my passions: climbing, surfing, dancing, or just being outdoors in the woods or on a campsite.</br></br>
+                        I strive for a balanced life where my hobbies, work, and personal growth are all given equal importance, aiming for a work-life balance that values my diverse interests and recognizes the importance of personal development.
+                            My ultimate goal is to find a position that encourages my curiosity and thirst for knowledge, ensuring I continue to grow and contribute in my unique way.</p>
                     </div>
                 </div>
-            </div>
-            <div class="profile-frame" style='width: 21rem;'>
-                <p>If you want to know more ask the Chatbot 🤖 or: </p>
-                <a href="path_to_your_file/Resume.pdf" download="Resume.pdf">
-                    <button>📄 Download my CV</button>
-                </a>
-                </br>
-                <p>👈 And don't forget to check out my projects on the left.</p>
+                <div class="extra-info" >
+                    <div class="profile-frame" style="margin-top:0px;">
+                        <p style="font-size: 18px;">If you want to know more ask the Chatbot 🤖  or: </p>
+                        <a href="path_to_your_file/Resume.pdf" download="Resume.pdf">
+                            <button>📄 Download my CV</button>
+                        </a>
+                        </br>
+                        <p style="font-size: 18px;">👈 And don't forget to check out my projects on the left.</p>
+                    </div>
+                </div>
             </div>
         """, 
         unsafe_allow_html=True)

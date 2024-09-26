@@ -39,7 +39,7 @@ def response_generator(response):
     for word in response.split():
         yield word + " "
         time.sleep(0.05)
-st.header("Ask questions about me from the AI assistant")
+st.header("Ask questions about me from the AI assistant 🤖")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
