@@ -66,6 +66,7 @@ def main():
                             <button>📄 Download my CV</button>
                         </a>
                         </br>
+                        </br>
                         <p style="font-size: 18px;">👈 And don't forget to check out my projects on the left.</p>
                     </div>
                 </div>
