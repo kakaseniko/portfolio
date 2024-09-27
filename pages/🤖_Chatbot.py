@@ -4,7 +4,6 @@ from langchain_cohere import ChatCohere
 from langchain.llms import Cohere
 import os
 from langchain.docstore.document import Document
-from pdfminer.high_level import extract_text
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_cohere import CohereEmbeddings
 from langchain.vectorstores import FAISS
@@ -14,9 +13,12 @@ from langchain.chains import RetrievalQA
 COHERE_API_KEY = os.getenv("COHERE_API_KEY")
 llm = ChatCohere(cohere_api_key=COHERE_API_KEY)
 
-pdf_text = extract_text("./images/summary.pdf")
+with open("./data/summary.txt", "r", encoding="utf-8") as file:
+    txt_text = file.read()
+
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
-chunks = text_splitter.split_text(pdf_text)
+chunks = text_splitter.split_text(txt_text)
+
 cohere_embeddings = CohereEmbeddings(model= "embed-english-v3.0",cohere_api_key=COHERE_API_KEY)
 documents = [Document(page_content=chunk) for chunk in chunks]
 vector_store = FAISS.from_documents(documents, cohere_embeddings)
