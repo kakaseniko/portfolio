@@ -46,6 +46,7 @@ button{
   padding: 5px;
   color: #b3b1b1;
   border-color: rgb(110, 110, 110);
+  margin-bottom: 0.1rem;
 }
 button:hover{
   border-color:rgb(138, 26, 26);

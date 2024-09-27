@@ -62,10 +62,9 @@ def main():
                 <div class="extra-info" >
                     <div class="profile-frame" style="margin-top:0px;">
                         <p style="font-size: 18px;">If you want to know more ask the Chatbot 🤖  or: </p>
-                        <a href="path_to_your_file/Resume.pdf" download="Resume.pdf">
+                        <a href="./images/Resume.pdf" download="Resume.pdf">
                             <button>📄 Download my CV</button>
                         </a>
-                        </br>
                         </br>
                         <p style="font-size: 18px;">👈 And don't forget to check out my projects on the left.</p>
                     </div>
