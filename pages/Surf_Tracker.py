@@ -16,7 +16,7 @@ st.write(f"""
     </div>
     """, 
     unsafe_allow_html=True)
-video_file = open("./images/SurfTrackerDemo.webm", "rb")
-video_bytes = video_file.read()
 
-st.video(video_bytes, autoplay=True, loop=True)
+video_url = "https://youtu.be/dFDPbkbcdhA"
+
+st.video(video_url, autoplay=True, loop=True)
