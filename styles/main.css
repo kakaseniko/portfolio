@@ -51,6 +51,14 @@ button{
 button:hover{
   border-color:rgb(138, 26, 26);
 }
+.chatbot-link{
+  text-decoration: none; 
+}
+.chatbot-link:hover{
+  color: #b3b1b1;
+  text-decoration: none; 
+
+}
 .img-frame{
   width: 200px; /* Set the size of the circle */
   height: 200px;
