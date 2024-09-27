@@ -5,9 +5,10 @@ import base64
 def main():
     st.set_page_config(
         page_title='Portfolio - Eniko Kakas' ,
-        page_icon='',   
+        page_icon='👽',   
         layout="wide",
-        initial_sidebar_state="expanded")
+        initial_sidebar_state="expanded",
+        )
     
     with open("./styles/main.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
@@ -55,7 +56,7 @@ def main():
                         </br>
                     </div>
                     <div style="margin-left: 1rem; margin-top:1rem;">
-                        <p style="font-size: 22px;">By my latest professional title I am a Software Engineer but that is not enough to describe me
+                        <p style="font-size: 18px;">By my latest professional title I am a Software Engineer but that is not enough to describe me
                         ... because I am a true generalist, versatile and adventurous with a passion for learning and exploring new paths.</br></br>
                         I started out as a Recreation Manager, then became a hairdresser, finally ending up in IT. Within IT I am embracing variety too, from data preparation, through model training, to application development and deployment.</br></br>
                         Outside of work I can be found lost in one of my passions: climbing, surfing, dancing, or just being outdoors in the woods or on a campsite.</br></br>

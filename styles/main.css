@@ -1,21 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-* {
-  /*font-family: 'Roboto';*/
-  color:rgb(110, 110, 110);
-}
-
 h1{
   font-size: 1.8rem;
   height: 2.6rem;
   font-weight: 600;
-  color: #b3b1b1;
   margin-left: 1rem;
 }
 h2{
   font-size: 1.4rem;
   font-weight: 500;
-  color: #b3b1b1;
   text-align: center;
 }
 .bd{
@@ -36,16 +29,14 @@ h2{
   align-items: center;
   margin-top: 2rem;
   padding: 2rem;
-  background-color: rgba(39, 39, 41, 0.356);
 }
 button{
   border-style: solid;
-  border-radius: 8%;
+  border-radius: 5px;
   border-width: 2px;
-  background-color: rgb(31, 29, 29);
+  background-color: #0e1117;
   padding: 5px;
-  color: #b3b1b1;
-  border-color: rgb(110, 110, 110);
+  color: #fafafa;
   margin-bottom: 0.1rem;
 }
 button:hover{
@@ -55,7 +46,7 @@ button:hover{
   text-decoration: none; 
 }
 .chatbot-link:hover{
-  color: #b3b1b1;
+  color: #fafafa;
   text-decoration: none; 
 
 }
@@ -107,14 +98,13 @@ button:hover{
   width: 950px;
   margin-top: 2rem;
   padding: 2rem 2rem 0rem 2rem;
-  background-color: rgba(39, 39, 41, 0.356);
 }
 .extra-info{
   grid-column: 1 / 2; /* First column */
   grid-row: 2; 
   justify-self: end;
   width: 360px;
-  height: 100%; /*150px;*/
+  height: 100%;
 }
 @media(max-width:1340px){
   h1{
