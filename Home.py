@@ -29,6 +29,13 @@ def main():
     }
 
     social_icons_html = [f"<a href='{social_icons[platform][0]}' target='_blank' style='margin-right: 10px;'><img class='social-icon' src='{social_icons[platform][1]}'' alt='{platform}''></a>" for platform in social_icons]
+    
+    with open("images/Resume.pdf", "rb") as pdf_file:
+        pdf_bytes = pdf_file.read()
+    
+    b64_pdf = base64.b64encode(pdf_bytes).decode('utf-8')
+    download_link = f'<a href="data:application/pdf;base64,{b64_pdf}" download="Resume.pdf"><button>📄 Download my CV</button></a>'
+
 
     st.write(f"""
             <div class="container">
@@ -62,9 +69,7 @@ def main():
                 <div class="extra-info" >
                     <div class="profile-frame" style="margin-top:0px;">
                         <p style="font-size: 18px;">If you want to know more ask the Chatbot 🤖  or: </p>
-                        <a href="./images/Resume.pdf" download="Resume.pdf">
-                            <button>📄 Download my CV</button>
-                        </a>
+                        {download_link}
                         </br>
                         <p style="font-size: 18px;">👈 And don't forget to check out my projects on the left.</p>
                     </div>
