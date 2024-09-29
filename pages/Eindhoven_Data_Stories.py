@@ -7,7 +7,14 @@ df = pd.read_csv('./data/trendy_eindhoven_data_Eniko.csv')
 st.header("Explore trends in Eindhoven 🏙️")
 
 st.write("""This small data visualization project was part of my 'Advanced AI' semester at Fontys. The goal was to create interactive graphs that allow people to 
-         see trends in Eindhoven's neighborhoods over the years and demonstrate how data can tell stories. For this project I used pandas and plotly.""")
+         see trends in Eindhoven's neighborhoods over the years and demonstrate how data can tell stories. </br></br>
+         When you select different variables from the drop down menu you can discover how these different aspects changed during the past years. 
+         It is possible to find out, for example, how COVID effected the electricity usage per neighborhood.
+         From the graph it is visible that the electricity usage escalated in each neighborhood around 2019, except for the city center where shops had to be closed,
+         resulting in less energy use in this area than before. </br></br>
+         What I liked about this project is how it allowed me to discover that data and graphs can be super interesting and that they can tell much more than facts,
+         they can contain whole stories. And most of the time some extra research has to be done to understand the "whys" behind the numbers which feels like a detective work for me.
+         On top of that, I could learn how to make interactive graphs with Plotly which was a fun experience.</br></br>""", unsafe_allow_html=True)
 
 variable = st.selectbox("Select a variable:", ['Aantal woningen', 'Inwoners', 'Gemiddeld elektriciteitsverbruik totaal', 'Verplaatst zich meestal per fiets %',
                                               'Personenauto\'s totaal', 'Doet aan vrijwilligerswerk', 'Sport wekelijks (18-84 jaar)', 
