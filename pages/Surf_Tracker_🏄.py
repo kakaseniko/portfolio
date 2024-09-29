@@ -1,5 +1,6 @@
 import streamlit as st
 
+st.set_page_config(page_title="Surf Tracker", page_icon="🌊", layout="centered")
 st.header("Log wave conditions during your surf session 🏄")
 
 video_url = "https://youtu.be/dFDPbkbcdhA"

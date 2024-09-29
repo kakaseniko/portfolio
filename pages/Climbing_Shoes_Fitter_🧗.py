@@ -16,6 +16,9 @@ def load_shoes():
     shoesdf = pd.read_csv('./data/climbingshoesdata.csv')
     return shoesdf
 
+st.set_page_config(page_title="Climbing Shoes Fitter", page_icon="🦶", layout="centered")
+
+
 st.header("Take a picture of your foot to find out which climbing shoes fit you best 🧗")
 st.write(""" Probably this project is the one I am most excited about. It allows users to take a picture of their foot,
          then two different AI models work together to determine which climbing shoes fit them best. The choice is based on the shape and the width of the foot, 

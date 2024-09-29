@@ -9,6 +9,7 @@ from langchain_cohere import CohereEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 
+st.set_page_config(page_title="Chatbot", page_icon="🤖", layout="centered")
 
 COHERE_API_KEY = os.getenv("COHERE_API_KEY")
 llm = ChatCohere(cohere_api_key=COHERE_API_KEY)
@@ -40,6 +41,10 @@ def response_generator(response):
         yield word + " "
         time.sleep(0.05)
 st.header("Ask questions about me from the AI assistant 🤖")
+st.write("""I created this chatbot specifically to answer questions you might have about me. It works with a vector store that I loaded with information 
+         about myself that I do not mind sharing publicly. In theory, the bot should only answer questions that can be answered based on the vector store
+          and questions that are in its basic knowledge (like 'how much is 2+2?'). However, it is always possible to make bots 'hallucinate' so please do not take 
+         everything it says seriously, especially if you are trying to push its boundaries. Enjoy! 😊""")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []

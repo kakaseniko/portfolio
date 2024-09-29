@@ -4,6 +4,8 @@ import pandas as pd
 import plotly.graph_objects as go
 
 df = pd.read_csv('./data/trendy_eindhoven_data_Eniko.csv')
+st.set_page_config(page_title="Eindhoven Data Stories", page_icon="🏙️", layout="centered")
+
 st.header("Explore trends in Eindhoven 🏙️")
 
 st.write("""This small data visualization project was part of my 'Advanced AI' semester at Fontys. The goal was to create interactive graphs that allow people to 
