@@ -59,7 +59,7 @@ def main():
                     </div>
                     <div style="margin-left: 1rem; margin-top:1rem;">
                         <p style="font-size: 18px;">I am  junior Software and AI engineer with a BSc degree from Fontys ICT. I am also a Recreation Manager, a ski instructor, 
-                        a hair dresser, and a (boulder) route setter...
+                        a hairdresser, and a (boulder) route setter...
                         a true generalist, versatile and adventurous with a passion for learning and exploring new paths.</br></br>
                         I believe my talent lies in the intersection of creativity, analytical thinking, and problem solving/ tackling challenging tasks. However, it took me some time 
                         to realize this and find a field where I can utilize all of the above.</br></br>
@@ -73,7 +73,7 @@ def main():
                         and that I might even have a feeling for it. Soon I enrolled to Fontys ICT and started my journey in the world of IT.</br></br>
                         I was surprised by how much I enjoyed the program. The high focus on practice based learning really suited me, and I loved being able to turn my ideas into something 
                         tangible. </br></br>
-                        Meanwhile, I had a side job as a route setter in a boulder gym. This was one of my first jobs where I found fulfillment. The way you have to come up with ideas/ 
+                        Meanwhile, I had a side job as a <a href="https://www.instagram.com/rstr.setting/" target="_blank">route setter</a> in a boulder gym. This was one of my first jobs where I found fulfillment. The way you have to come up with ideas/ 
                         challenges for others, while puzzling climbing holds together like they were Lego, in combination with thinking about movements and body positions is so exciting and 
                         inspiring for me. I always feel like a kid in a candy store when I am setting routes. I am still passionate about it today and want to pursue this side job until 
                         my body lets me.</br></br>
