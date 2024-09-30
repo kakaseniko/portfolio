@@ -1,5 +1,7 @@
 import streamlit as st
 import base64
+import plotly.graph_objects as go
+import streamlit.components.v1 as components
 
 # MAIN
 def main():
@@ -56,12 +58,38 @@ def main():
                         </br>
                     </div>
                     <div style="margin-left: 1rem; margin-top:1rem;">
-                        <p style="font-size: 18px;">By my latest professional title I am a Software Engineer but that is not enough to describe me
-                        ... because I am a true generalist, versatile and adventurous with a passion for learning and exploring new paths.</br></br>
-                        I started out as a Recreation Manager, then became a hairdresser, finally ending up in IT. Within IT I am embracing variety too, from data preparation, through model training, to application development and deployment.</br></br>
-                        Outside of work I can be found lost in one of my passions: climbing, surfing, dancing, or just being outdoors in the woods or on a campsite.</br></br>
-                        I strive for a balanced life where my hobbies, work, and personal growth are all given equal importance, aiming for a work-life balance that values my diverse interests and recognizes the importance of personal development.
-                            My ultimate goal is to find a position that encourages my curiosity and thirst for knowledge, ensuring I continue to grow and contribute in my unique way.</p>
+                        <p style="font-size: 18px;">I am  junior Software and AI engineer with a BSc degree from Fontys ICT. I am also a Recreation Manager, a ski instructor, 
+                        a hair dresser, and a (boulder) route setter...
+                        a true generalist, versatile and adventurous with a passion for learning and exploring new paths.</br></br>
+                        I believe my talent lies in the intersection of creativity, analytical thinking, and problem solving/ tackling challenging tasks. However, it took me some time 
+                        to realize this and find a field where I can utilize all of the above.</br></br>
+                        During obtaining my first Bsc degree in Recreation Management, my creative and problem solving skills were challenged but did not have a lot of room for analytical thinking.
+                        I really enjoyed my courses, especially their wide range of topics from sports and movement, through health, to outdoor activities. However, eventually I had to realize that 
+                        the continuous, intensive human interaction is overwhelming for me and had to find a different path.</br></br>  
+                        I decided to focus on something creative and took a hairdressing course 💇‍♀️. I loved working with my hands and creating something beautiful. I also liked that 
+                        my work brought joy into people's lives. However, soon the tasks of a hairdresser were not challenging enough intellectually, and I was looking for yet another 
+                        path.</br></br>
+                        I started taking some online courses. First about sustainability, then about programming. That was when I realized that coding is much more interesting than I thought 
+                        and that I might even have a feeling for it. Soon I enrolled to Fontys ICT and started my journey in the world of IT.</br></br>
+                        I was surprised by how much I enjoyed the program. The high focus on practice based learning really suited me, and I loved being able to turn my ideas into something 
+                        tangible. </br></br>
+                        Meanwhile, I had a side job as a route setter in a boulder gym. This was one of my first jobs where I found fulfillment. The way you have to come up with ideas/ 
+                        challenges for others, while puzzling climbing holds together like they were Lego, in combination with thinking about movements and body positions is so exciting and 
+                        inspiring for me. I always feel like a kid in a candy store when I am setting routes. I am still passionate about it today and want to pursue this side job until 
+                        my body lets me.</br></br>
+                        How I advanced further in my studies I found the same excitement and passion in programming as in route setting. They both seem to lend in this sweet spot between 
+                        creativity, analyses, and problem solving where I feel inspired and driven. I also just adore the IT community with all its support, corkiness, and sense of humor 🪿. 
+                        I feel like I have a place among these people. I love coming up with ideas for new projects (the more challenging, the better) and find a way to realize them. 
+                        I also love how you can solve a problem in many different ways leaving room for creativity and playfulness. But my absolute favorite is how each project is connected 
+                        to a different field and teaches you something that often has nothing to do with IT. From the various projects throughout my studies I learnt about HR management,
+                        education, the funeral industry, restaurant reservations, <a href="/Laravel_es_magico_🦄" target="_self">holistic body treatments</a>, <a href="/Japanese_Knotweed_Detection_🌱" target="_self">invasive plant species</a> and so on. 
+                        And these were only the projects that were 
+                        given to me. Next to these, I had my own assignments where I always choose to tackle problems I encountered through my hobbies (like a <a href="/Surf_Tracker_🏄" target="_self">surf forecasting app</a>,
+                        or a <a href="Climbing_Shoes_Fitter_🧗" target="_self">climbing shoes selector tool</a>). 
+                        How awesome is that?! 
+                        Learning while solving problems in fields that people connect to. It feels like I can have actual impact and reach people and society through IT.</br></br> 
+                        So this is me in my versatile and adventures world, striving for a balanced life where my hobbies, work, and personal growth are all given equal importance, and a job that values my diverse interests and recognizes the importance of personal development.
+                        My ultimate goal is to be in a position that encourages my curiosity and thirst for knowledge, ensuring I continue to grow and contribute in my unique way.</p>
                     </div>
                 </div>
                 <div class="extra-info" >
@@ -75,7 +103,6 @@ def main():
             </div>
         """, 
         unsafe_allow_html=True)
-
 
 if __name__ == '__main__':
     main()

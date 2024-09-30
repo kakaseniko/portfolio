@@ -42,10 +42,10 @@ button{
 button:hover{
   border-color:rgb(138, 26, 26);
 }
-.chatbot-link{
+a{
   text-decoration: none; 
 }
-.chatbot-link:hover{
+a:hover{
   color: #fafafa;
   text-decoration: none; 
 
@@ -76,7 +76,7 @@ button:hover{
 .container {
   display: grid;
   grid-template-columns: 25% 75%;
-  grid-template-rows: auto auto; 
+  grid-template-rows: 30% 70%; 
   gap: 40px;
   justify-items: start;
 }
@@ -94,7 +94,7 @@ button:hover{
   border-width: 2px;
   border-radius: 3%;
   border-color: black;
-  height: 96%;
+  height: 100%;
   width: 950px;
   margin-top: 2rem;
   padding: 2rem 2rem 0rem 2rem;
@@ -103,6 +103,7 @@ button:hover{
   grid-column: 1 / 2; /* First column */
   grid-row: 2; 
   justify-self: end;
+  align-self: end;
   width: 360px;
   height: 100%;
 }

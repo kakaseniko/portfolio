@@ -9,6 +9,7 @@ from langchain_cohere import CohereEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 
+
 st.set_page_config(page_title="Chatbot", page_icon="🤖", layout="centered")
 
 COHERE_API_KEY = os.getenv("COHERE_API_KEY")
