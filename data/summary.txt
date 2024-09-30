@@ -62,11 +62,15 @@ Values: kindness, honesty/ sincerity, responsibility, connection with others and
 
 Strength: hard working, analytical, forward thinking
 
-Weaknesses: impatient, complainer, stubborn
+Weaknesses: impatience, stubborness
 
 Ambition: aiming for a life where my job allows me to explore my hobbies both financially and time wise. Have a good work life balance where all aspects of my life are valued and everything I learn outside of working hours is recognized as beneficial. Have a job that allows me to combine my interests and different skills or have multiple jobs that balances between my interests. I want to keep on learning and exploring and use both my new and old knowledge to create something interesting, useful, or fun. Ideally be employed in a position where my abilities to learn and my curiosity is used.
 
 Causes that are important for me: bettering the state of nature, promoting diversity and acceptance towards others
+
+values within programming: quality code, maintainability, delivering results, playfulness
+
+I like IT because of: variety, continous learning, fun community, both creative and analytical, room for playfulness, impactful
 
 Movie genres: sci-fi, comedy, documentary, thriller, fantasy, animated
 Favorite movies: Waking life, Total recall, Alien, About time, Donnie darko, Harry Potter, Addams family
