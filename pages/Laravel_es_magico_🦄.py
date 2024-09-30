@@ -4,4 +4,5 @@ st.header("Create anything with Laravel 🦄")
 
 
 
-st.write("...because as I learnt it during my internship, Laravel is magical! 🪄")
+st.write("...because Laravel is magical! 🪄, Gran Canaria, working with Laravel, Filament, Ionic, Angular, IQure project")
+st.image("./images/3.png", caption="Working with Laravel, Filament, Ionic, Angular, IQure project", use_column_width=True)

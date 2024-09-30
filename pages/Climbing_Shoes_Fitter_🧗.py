@@ -25,7 +25,7 @@ st.write(""" Probably this project is the one I am most excited about. It allows
          and the selection is made from a dataset containing 14 different climbing shoes. </br></br>
          It is a perfect example of how I combine my hobbies with school projects. This time I had to create a prototype for my 'Advanced AI' semester that showcases how 
          real world problems can be solved with AI. The problem I tried to tackle was the difficulty of finding the right climbing shoes. There are many different models available 
-         from many different brands and the overwhelming number of choices can be difficult to navigate, especially for beginners. I found a guide online that included a diagram
+         from many different brands and the overwhelming number of choices can be challenging to navigate, especially for beginners. I found a guide online that included a diagram
          of climbing shoes and feet types, and I thought it would be interesting to try to "automate" this guide.</br></br>
 """, unsafe_allow_html=True)
 
@@ -33,7 +33,7 @@ st.image("./images/2.jpg", caption="Climbing shoes by foot shapes. source: https
 st.write("""
             The process was both interesting and fun. As all machine learning projects, it started with gathering data. Since I needed a rather unusual dataset (pictures of feet),
          I found lots of entertainment in this beginning phase. I was lucky to come by a dataset on Kaggle that contained the necessary images for training one of the models,
-         however I had to be creative to obtain data for the other model. I ended up using my network of climbers who were happy to help me out with this climbing related project,
+         however I had to be creative to obtain data for the other one. I ended up using my network of climbers who were happy to help me out with this climbing related project,
          and allowed me to take a picture of their foot (no matter how bizarre this request was). I assured them that the data is anonymous and will never leave my computer,
          then we cracked some tasteless jokes about OnlyFeet accounts. </br></br>
          Once I had enough data, the next step was to figure out how the width and the shape can be determined from an image. The shape was quiet straight forward, I knew I needed a classification model,

@@ -18,7 +18,7 @@ st.write("""This small data visualization project was part of my 'Advanced AI' s
          they can contain whole stories. And most of the time some extra research has to be done to understand the "whys" behind the numbers which feels like a detective work for me.
          On top of that, I could learn how to make interactive graphs with Plotly which was a fun experience.</br></br>""", unsafe_allow_html=True)
 
-variable = st.selectbox("Select a variable:", ['Aantal woningen', 'Inwoners', 'Gemiddeld elektriciteitsverbruik totaal', 'Verplaatst zich meestal per fiets %',
+variable = st.selectbox("Select a variable:", ['Gemiddeld elektriciteitsverbruik totaal', 'Aantal woningen', 'Inwoners',  'Verplaatst zich meestal per fiets %',
                                               'Personenauto\'s totaal', 'Doet aan vrijwilligerswerk', 'Sport wekelijks (18-84 jaar)', 
                                               'Bezoekt culturele voorstellingen %', 'Registraties overlast per 1.000 inwoners',
                                               'Voelt zich wel eens onveilig in de eigen buurt %', 'Gemiddeld persoonlijk inkomen per inkomensontvanger (x1000 euro)',

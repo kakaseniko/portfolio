@@ -14,7 +14,7 @@ st.write(f"""
          The idea was to create a surf forecasting app that is more reliable and easier to interpret than the current ones. As a beginner surfer at the time,
          I found it overwhelming to look at surf forecasts and trying to make sense of them so I had two things in mind: 1. I have to do my homework and learn about waves, 
          2. I want to find a way to make the forecasts more user-friendly.</br></br>
-         During my specialization semester I tried to tackle the problem with machine learning, using wave data and some physics formulas to categorize them.
+         During my specialization semester I tried to address the problem with machine learning, using wave data and some physics formulas to categorize them.
          At the end, I did get some interesting results out of it but I had to realize that I needed a different approach to reach my goal. Nevertheless, I really enjoyed the process
          and I became confident about reading surf forecasts and understanding waves.</br>
          </p>
@@ -28,10 +28,10 @@ st.write("""
          an enterprise level software that uses micro services, so I have seen an opportunity to come back to my surf forecasting challenge and try to solve the problem from a different angle.
         </br></br>
         This time I wanted to base the surf conditions categorization on user feedback instead of physics formulas. And for that I needed an app. An app which surfers can use to log their surf sessions and rate the conditions. 
-        An app that can collect data and train a machine learning model. An app that can help me to pass the semester.
+        An app that can collect data and train a machine learning model. An app that can help me pass the semester.
         </br></br>
-        Without getting into too much technical details, I can say that a prototype was born and I passed the semester.🎉 I built a web-application with an Ionic and Angular front-end,
-         and a Django microservices back-end. I learnt how to use a message broker, how to orchestrate services with Docker, how to deploy with Kubernetes, and how to automate testing and deployment on GitHub.
+        Without getting into too much technical details, I can say that a prototype was born and I passed the semester.🎉 I built a web-application (the one on the video) with an Ionic and Angular front-end,
+         and a Django microservices back-end. I learnt how to use a message broker, orchestrate services with Docker, deploy with Kubernetes, and automate testing and deployment on GitHub.
           However, I did not get to the machine learning part this time, but hoping to finish it one day. </br></br>
          For anybody who wants to know more technical details, the code is available on <a href="https://github.com/kakaseniko/SurfTracker">GitHub</a>.
          </p> 
