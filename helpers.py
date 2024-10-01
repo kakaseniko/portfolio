@@ -24,11 +24,11 @@ def load_ann():
 def calculateWidthCategory(boxh, boxw):
     ratio = boxw / boxh
     category = 'narrow'
-    if ratio < 0.42:
+    if ratio < 0.40:
         category = 'narrow'
-    elif ratio < 0.47:
+    elif ratio < 0.45:
         category = 'medium'
-    elif ratio > 0.47:
+    elif ratio > 0.45:
         category = 'wide'
     return category
 
