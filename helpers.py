@@ -15,8 +15,8 @@ def load_yolo():
 
 @st.cache_resource
 def load_ann():
-    REPO_ID = "kakaseniko/fsd"
-    FILENAME = "fsd.h5"
+    REPO_ID = "kakaseniko/fann"
+    FILENAME = "model.keras"
     model = tf.keras.models.load_model(hf_hub_download(repo_id=REPO_ID, filename=FILENAME))
     probability_model = tf.keras.Sequential([model, tf.keras.layers.Softmax()])
     return probability_model

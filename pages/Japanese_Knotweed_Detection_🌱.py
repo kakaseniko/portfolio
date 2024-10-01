@@ -15,7 +15,7 @@ st.write("""I especially enjoyed working on this project because the domain/ cau
          The process included data labeling (about 10.000 images was enough to condition myself to spot Japanese knotweed everywhere I go 🫠), testing different model 
          tasks (classification, object detection, and segmentation), and building a prototype application.""", unsafe_allow_html=True)
 st.image("./images/5.png", caption="Prototype to display Japanese knotweed locations", use_column_width=True)
-st.write("""The image above shows the final outcome, a prototype that can be used to analyze a whole folder, find the images with Japanese knotweed, and display their 
-         location on a map. The marked dots on the map are clickable and they show the image on which the knotweed was detected. </br></br>
+st.write("""The image above shows the final outcome, a prototype that can be used to analyze a whole folder, detect the images with Japanese knotweed, and display their 
+         location on a map. The marked dots on the map are clickable and they show the image on which the knotweed was recognized. </br></br>
          Since the project was a success, the company is planning to continue it and extend the model to be able to recognize multiple plant species and 
          use the solution to measure biodiversity along the roads.""", unsafe_allow_html=True)

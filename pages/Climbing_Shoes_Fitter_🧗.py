@@ -99,7 +99,7 @@ if img_file_buffer is not None:
     #process image
     img = imread(image_path)
     clusteredImage = helpers.kMeans_cluster(img)
-    st.image(clusteredImage, caption='Clustered Image', use_column_width=True)
+    #st.image(clusteredImage, caption='Clustered Image', use_column_width=True)
 
     edgedImg = helpers.edgeDetection(clusteredImage)
     #st.image(edgedImg, caption='Edged Image', use_column_width=True)
@@ -110,9 +110,9 @@ if img_file_buffer is not None:
     #get shoes
     shoesdf = load_shoes()
     shoes = shoesdf.query(f'{footshape} == 1 & {footWidth} == 1')
-    st.write(footshape, footWidth)
+    st.write("Foot shape: ", footshape, ", Foot width: ", footWidth)
     #st.table(shoes)
-
+    st.write("Suggested shoes:")
     helpers.display_results(shoes)
 
 
