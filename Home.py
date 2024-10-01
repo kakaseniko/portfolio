@@ -84,7 +84,7 @@ def main():
                         to a different field and teaches you something that often has nothing to do with IT. From the various projects throughout my studies I learnt about HR management,
                         education, the funeral industry, restaurant reservations, <a href="/Laravel_es_magico_🦄" target="_self">holistic body treatments</a>, <a href="/Japanese_Knotweed_Detection_🌱" target="_self">invasive plant species</a> and so on. 
                         And these were only the projects that were 
-                        given to me. Next to these, I had my own assignments where I always choose to tackle problems I encountered through my hobbies (like a <a href="/Surf_Tracker_🏄" target="_self">surf forecasting app</a>,
+                        handed to me. Next to these, I had my own assignments where I always choose to tackle problems I encountered through my hobbies (like a <a href="/Surf_Tracker_🏄" target="_self">surf forecasting app</a>,
                         or a <a href="Climbing_Shoes_Fitter_🧗" target="_self">climbing shoes selector tool</a>). 
                         How awesome is that?! 
                         Learning while solving problems in fields that people connect to. It feels like I can have actual impact and reach people and society through IT.</br></br> 
