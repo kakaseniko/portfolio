@@ -110,9 +110,12 @@ if img_file_buffer is not None:
     #get shoes
     shoesdf = load_shoes()
     shoes = shoesdf.query(f'{footshape} == 1 & {footWidth} == 1')
-    st.write("Foot shape: ", footshape, ", Foot width: ", footWidth)
+    st.write("Foot shape: ", footshape)
+    st.write("Foot width: ", footWidth)
     #st.table(shoes)
     st.write("Suggested shoes:")
+    if shoes.empty:
+        st.write("There are no shoes available in the dataset for this foot type.")
     helpers.display_results(shoes)
 
 
