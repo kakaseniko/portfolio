@@ -107,7 +107,7 @@ a:hover{
   width: 360px;
   height: 100%;
 }
-@media(max-width:1340px){
+@media(max-width:1630px){
   h1{
     text-align: center;
   }
@@ -133,7 +133,7 @@ a:hover{
   }
 }
 
-@media (max-width: 1340px) {
+@media (max-width: 1630px) {
   .container {
       grid-template-columns: 100%;  /* Single column */
       grid-template-rows: auto;    /* Stacked rows */

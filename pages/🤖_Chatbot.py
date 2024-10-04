@@ -8,7 +8,8 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_cohere import CohereEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.chains import RetrievalQA
-
+import requests
+import concurrent.futures
 
 st.set_page_config(page_title="Chatbot", page_icon="🤖", layout="centered")
 
@@ -32,9 +33,20 @@ qa_chain = RetrievalQA.from_chain_type(
     chain_type="stuff"
 )
 
-def create_answer(prompt):
-    response = qa_chain.run(prompt)
-    return response
+def create_answer(prompt, timeout_duration=10):
+    try:
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            future = executor.submit(qa_chain.run, prompt)
+            response = future.result(timeout=timeout_duration)
+        if not response:
+            return "Error: No response received from the API."
+        return response
+    except concurrent.futures.TimeoutError:
+        return "Error: Getting a response from the chatbot engine takes longer than expected 🧐. Please try again later."
+    except requests.exceptions.RequestException as e:
+        return f"Error: Failed to connect to the chatbot engine 🙁. Please try again later."
+    except Exception as e:  # Catch any other exceptions
+        return f"Error: An unexpected error occurred 🤨. Please try again later."
 
 
 def response_generator(response):

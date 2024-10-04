@@ -9,7 +9,7 @@ st.write("""...because Laravel is magical! 🪄 This sentence summarizes my inte
          This idea kicked off a new adventure for me. I was super lucky and found a company called Calima Solutions on Gran Canaria that offered Digital Opportunities internships for
           Erasmus students. I applied and two months later I was working in an office with an ocean view. </br></br> 
          """, unsafe_allow_html=True)
-st.image("./images/6.jpg", caption="Office at Calima Solutions", width=400)
+st.image("./images/6.jpg", caption="Office at Calima Solutions")
 
 st.write("""My job was to implement functionalities in a full-stack application made for an upcoming health resort. This project was the one that thought me about Angular, 
          Ionic, Laravel, Filament, and Tailwind. Next to that, it also thought me soft skills as I was part of the development team, participated in daily stand ups, 
