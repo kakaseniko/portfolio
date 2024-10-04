@@ -103,8 +103,11 @@ def display_results(shoes):
             st.checkbox('outdoor', key=f"{index}_outdoor", value=('outdoor' in selected_envs), disabled=True)
 
 def predict_foot_shape(image_path):
-    probability_model = load_ann()
-    resized_image = resize_image(image_path, (480, 480))
-    img = (np.expand_dims(resized_image,0))
-    prediction = probability_model.predict(img)
-    return decodePrediction(prediction)
+    try:
+        probability_model = load_ann()
+        resized_image = resize_image(image_path, (480, 480))
+        img = (np.expand_dims(resized_image,0))
+        prediction = probability_model.predict(img)
+        return decodePrediction(prediction)
+    except Exception as e:
+        return "Something went wrong 🙁. Please try again later."
