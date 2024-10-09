@@ -1,6 +1,5 @@
 import streamlit as st
 import base64
-import plotly.graph_objects as go
 import streamlit.components.v1 as components
 
 # MAIN
