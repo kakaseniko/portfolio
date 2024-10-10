@@ -1,6 +1,6 @@
 import streamlit as st
-import plotly.express as px
 import pandas as pd
+import plotly.express as px
 import plotly.graph_objects as go
 
 df = pd.read_csv('./data/trendy_eindhoven_data_Eniko.csv')
