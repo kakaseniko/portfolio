@@ -4,12 +4,13 @@ from langchain_cohere import ChatCohere
 from langchain.llms import Cohere
 import os
 from langchain.docstore.document import Document
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+#from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_cohere import CohereEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 import requests
 import concurrent.futures
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 st.set_page_config(page_title="Chatbot", page_icon="🤖", layout="centered")
 

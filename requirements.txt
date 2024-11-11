@@ -14,3 +14,4 @@ langchain_cohere
 langchain
 faiss_cpu
 tensorflow
+langchain-text-splitters
