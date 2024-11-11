@@ -1,7 +1,8 @@
 import streamlit as st
 import time
 from langchain_cohere import ChatCohere
-from langchain.llms import Cohere
+#from langchain.llms import Cohere
+from langchain_cohere.llms import Cohere
 import os
 from langchain.docstore.document import Document
 #from langchain.text_splitter import RecursiveCharacterTextSplitter
