@@ -15,3 +15,4 @@ langchain
 faiss_cpu
 tensorflow
 langchain-text-splitters
+langchain_community
