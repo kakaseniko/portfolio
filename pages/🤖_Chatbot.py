@@ -3,14 +3,15 @@ import time
 from langchain_cohere import ChatCohere
 from langchain_cohere.llms import Cohere
 import os
-#from langchain.docstore.document import Document
 from langchain_core.documents import Document
 from langchain_cohere import CohereEmbeddings
-from langchain.vectorstores import FAISS
-from langchain.chains import RetrievalQA
+from langchain_community.vectorstores import FAISS
+from langchain_core.output_parsers import StrOutputParser
 import requests
 import concurrent.futures
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_core.runnables import RunnablePassthrough
+from langchain import hub
 
 st.set_page_config(page_title="Chatbot", page_icon="🤖", layout="centered")
 
@@ -27,17 +28,26 @@ cohere_embeddings = CohereEmbeddings(model= "embed-english-v3.0",cohere_api_key=
 documents = [Document(page_content=chunk) for chunk in chunks]
 vector_store = FAISS.from_documents(documents, cohere_embeddings)
 
-retriever = vector_store.as_retriever()
-qa_chain = RetrievalQA.from_chain_type(
-    llm=llm,
-    retriever=retriever,
-    chain_type="stuff"
+def format_docs(docs):
+    return "\n\n".join(doc.page_content for doc in docs)
+
+prompt = hub.pull("rlm/rag-prompt")
+
+
+qa_chain = (
+    {
+        "context": vector_store.as_retriever() | format_docs,
+        "question": RunnablePassthrough(),
+    }
+    | prompt
+    | llm
+    | StrOutputParser()
 )
 
 def create_answer(prompt, timeout_duration=10):
     try:
         with concurrent.futures.ThreadPoolExecutor() as executor:
-            future = executor.submit(qa_chain.run, prompt)
+            future = executor.submit(qa_chain.invoke, prompt)
             response = future.result(timeout=timeout_duration)
         if not response:
             return "Error: No response received from the API."
