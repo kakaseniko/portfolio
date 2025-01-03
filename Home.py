@@ -45,7 +45,7 @@ def main():
                                 <img class="bd" src="{img}" alt="Eniko Kakas">
                             </div>
                         </div>
-                        <h3 style="margin-left: 1rem;">Software & AI Engineer 👩‍💻</h2>
+                        <h4 style="margin-left: 1rem;">Software & AI Engineer 👩‍💻</h2>
                         <div style="display: flex; justify-content: center; margin-bottom: 20px;">
                         {''.join(social_icons_html)}
                         </div>
