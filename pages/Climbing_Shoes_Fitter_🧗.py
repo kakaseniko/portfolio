@@ -29,7 +29,7 @@ st.write(""" Probably this project is the one I am most excited about. It allows
          of climbing shoes and feet types, and I thought it would be interesting to try to "automate" this guide.</br></br>
 """, unsafe_allow_html=True)
 
-st.image("./images/2.jpg", caption="Climbing shoes by foot shapes. source: https://www.climbingshoereview.com/how-to-choose-climbing-shoes/", use_column_width=True)
+st.image("./images/2.jpg", caption="Climbing shoes by foot shapes. source: https://www.climbingshoereview.com/how-to-choose-climbing-shoes/", use_container_width=True)
 st.write("""
             The process was both interesting and fun. As all machine learning projects, it started with gathering data. Since I needed a rather unusual dataset (pictures of feet),
          I found lots of entertainment in this beginning phase. I was lucky to come by a dataset on Kaggle that contained the necessary images for training one of the models,

@@ -23,7 +23,7 @@ def main():
     social_icons = {
         # Platform: [URL, Icon]
         "LinkedIn": ["https://www.linkedin.com/in/eniko-kakas/", "https://cdn-icons-png.flaticon.com/512/174/174857.png"],
-        "GitHub": ["https://github.com/kakaseniko", "https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg"],
+        "GitHub": ["https://github.com/kakaseniko", "https://cdn-icons-png.flaticon.com/512/38/38401.png"],
         "Email" : ["mailto:kakas.eniko@gmail.com", "https://cdn-icons-png.flaticon.com/512/281/281769.png"],
     }
     social_icons_html = [f"<a href='{social_icons[platform][0]}' target='_blank' style='margin-right: 10px;'><img class='social-icon' src='{social_icons[platform][1]}'' alt='{platform}''></a>" for platform in social_icons]
@@ -45,7 +45,7 @@ def main():
                                 <img class="bd" src="{img}" alt="Eniko Kakas">
                             </div>
                         </div>
-                        <h2 style="margin-left: 1rem;">Software & AI Engineer 👩‍💻</h2>
+                        <h3 style="margin-left: 1rem;">Software & AI Engineer 👩‍💻</h2>
                         <div style="display: flex; justify-content: center; margin-bottom: 20px;">
                         {''.join(social_icons_html)}
                         </div>
